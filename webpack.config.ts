@@ -18,7 +18,7 @@ const config: webpack.Configuration = {
     plugins: [
         new CleanWebpackPlugin([outDir]),
         new HtmlWebpackPlugin({
-            title: 'frontend typescript jest template'
+          template: "src/index.html",
         })
     ],
     output: {
@@ -47,6 +47,6 @@ const config: webpack.Configuration = {
         },
         overlay: true
     }
-}
+};
 
 export default config;
